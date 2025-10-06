@@ -1,16 +1,11 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-var products = require('../data/product.json');
+var mainController = require("../controllers/main");
 
-// /* GET home page. */
-// router.get('/', function (req, res, next) {
-//   res.render('index', {
-//     title: 'Toko Online Sederhana',
-//     products: products
-//   });
-// });
-router.get("/", maincontroller.index);
+// Home
+router.get("/", mainController.index);
 
-//selesaikan fungsi route pencarian, pisahkan dengan controller
+// Search
+router.get("/search", mainController.search);
 
 module.exports = router;
