@@ -5,6 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var engine = require('ejs-blocks');// menggunkkan ejs block
 
+require("./app_toko_online/models/db");
+
 var indexRouter = require('./app_toko_online/routes/index');
 var usersRouter = require('./app_toko_online/routes/users');
 var productRouter = require('./app_toko_online/routes/product');
