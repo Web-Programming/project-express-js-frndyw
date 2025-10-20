@@ -5,14 +5,14 @@ POST http://localhost:3000/api/orders
 Content-Type: application/json
 
 {
-    "user": "68f2376c11296c1c84db3393", 
+    "user": "68f5ed0fda8f9a72ff023aba", 
     "orderItems": [
         {
-            "product": "68f5e82e7a818c26b391241f", 
+            "product": "68f5f6561b6ace6a455e83b1", 
             "quantity": 2
         },
         {
-            "product": "68f5e84a7a818c26b3912421",
+            "product": "68f5f66b1b6ace6a455e83b3",
             "quantity": 1
         }
     ]
@@ -22,10 +22,10 @@ Content-Type: application/json
 GET http://localhost:3000/api/orders
 
 ### GET Detail Pesanan (Ganti ID)
-GET http://localhost:3000/api/orders/68f2483781f31b290702dad5
+GET http://localhost:3000/api/orders/68f5f6a4c98e95671fc07068
 
 ### PUT Update Status Pesanan (Ganti ID)
-PUT http://localhost:3000/api/orders/68f2483781f31b290702dad5
+PUT http://localhost:3000/api/orders/68f5f6a4c98e95671fc07068
 Content-Type: application/json
 
 {
